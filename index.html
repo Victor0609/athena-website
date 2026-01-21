@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Athena RAG | Private, Secure Enterprise AI</title>
+  <meta name="description" content="Athena RAG is a private, on‑premise and cloud‑deployable enterprise AI platform for Retrieval‑Augmented Generation, Text‑to‑SQL, and secure internal knowledge automation." />
+  <style>
+    :root {
+      --brand: #2563EB;
+      --brand-dark: #1E40AF;
+      --bg: #0B1220;
+      --card: #111827;
+      --fg: #E5E7EB;
+      --muted: #9CA3AF;
+      --accent: #22C55E;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #1E3A8A33, transparent), var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+    header {
+      padding: 28px 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      background: rgba(11,18,32,0.85);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #1F2937;
+      z-index: 10;
+    }
+    header .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+    }
+    header nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 28px;
+      font-weight: 500;
+    }
+    header nav a:hover { color: var(--fg); }
+    .cta {
+      background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+      color: white !important;
+      padding: 10px 18px;
+      border-radius: 8px;
+    }
+    section { padding: 96px 64px; }
+    .hero {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 64px;
+      align-items: center;
+    }
+    h1 {
+      font-size: 3.25rem;
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+    p.lead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+    .hero-actions a {
+      margin-right: 16px;
+      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 10px;
+      font-weight: 600;
+      display: inline-block;
+    }
+    .secondary {
+      border: 1px solid #334155;
+      color: var(--fg);
+    }
+    .panel {
+      background: linear-gradient(180deg, #0F172A, #020617);
+      border: 1px solid #1F2937;
+      border-radius: 16px;
+      padding: 28px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+    h3 { margin-top: 0; }
+    .muted { color: var(--muted); }
+    .tag {
+      display: inline-block;
+      background: #020617;
+      border: 1px solid #1F2937;
+      color: #93C5FD;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      margin-bottom: 12px;
+    }
+    footer {
+      padding: 48px 64px;
+      border-top: 1px solid #1F2937;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    footer a { color: var(--muted); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Athena RAG</div>
+    <nav>
+      <a href="#platform">Platform</a>
+      <a href="#security">Security</a>
+      <a href="#usecases">Use Cases</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact" class="cta">Request Demo</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <span class="tag">Enterprise‑Grade Private AI</span>
+      <h1>Your Internal Knowledge.<br/>Your Infrastructure.<br/>No Data Leakage.</h1>
+      <p class="lead">
+        Athena RAG is a secure enterprise AI platform for Retrieval‑Augmented Generation, Text‑to‑SQL, and internal automation—deployable on‑premise or in your private cloud.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="cta">Request a Demo</a>
+        <a href="#platform" class="secondary">View Platform</a>
+      </div>
+    </div>
+    <div class="panel">
+      <pre class="muted">
+User: Show last quarter revenue by region
+
+Athena:
+• Interprets schema
+• Generates secure SQL
+• Executes on your DB
+• Returns governed results
+      </pre>
+    </div>
+  </section>
+
+  <section id="platform">
+    <h2 style="text-align:center">What Athena Delivers</h2>
+    <p class="muted" style="text-align:center; max-width:720px; margin: 0 auto 48px;">
+      Built for regulated organizations that cannot send data to third‑party AI APIs.
+    </p>
+    <div class="grid">
+      <div class="panel">
+        <h3>Private RAG Engine</h3>
+        <p class="muted">Grounded answers from PDFs, databases, and internal systems—fully auditable and citation‑aware.</p>
+      </div>
+      <div class="panel">
+        <h3>Text‑to‑SQL</h3>
+        <p class="muted">Natural language to governed SQL with schema‑aware reasoning and dialect normalization.</p>
+      </div>
+      <div class="panel">
+        <h3>On‑Prem & VPC Deployment</h3>
+        <p class="muted">Run Athena entirely within your infrastructure. No outbound data flow required.</p>
+      </div>
+      <div class="panel">
+        <h3>Role‑Based Access</h3>
+        <p class="muted">Strict isolation for SuperAdmin, Admin, and User roles with full audit trails.</p>
+      </div>
+      <div class="panel">
+        <h3>Model‑Agnostic</h3>
+        <p class="muted">Use open‑weight LLMs or proprietary models without platform lock‑in.</p>
+      </div>
+      <div class="panel">
+        <h3>Enterprise Integrations</h3>
+        <p class="muted">Connect to MSSQL, PostgreSQL, Oracle, file stores, and internal APIs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="security">
+    <h2 style="text-align:center">Security by Design</h2>
+    <div class="grid">
+      <div class="panel"><h3>No Training on Your Data</h3><p class="muted">Your data is never used to train external models.</p></div>
+      <div class="panel"><h3>Network Isolation</h3><p class="muted">Air‑gapped or restricted‑egress deployments supported.</p></div>
+      <div class="panel"><h3>Full Auditability</h3><p class="muted">Every prompt, query, and response is traceable.</p></div>
+    </div>
+  </section>
+
+  <section id="usecases">
+    <h2 style="text-align:center">Who Uses Athena</h2>
+    <div class="grid">
+      <div class="panel"><h3>Financial Institutions</h3><p class="muted">Secure analytics, compliance queries, and internal reporting.</p></div>
+      <div class="panel"><h3>Government & Public Sector</h3><p class="muted">Sensitive document intelligence without cloud risk.</p></div>
+      <div class="panel"><h3>Enterprises & R&D</h3><p class="muted">Private AI assistants for internal knowledge and data.</p></div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2 style="text-align:center">Simple Enterprise Pricing</h2>
+    <p class="muted" style="text-align:center">Licensed per deployment. Not per token.</p>
+    <div class="grid">
+      <div class="panel"><h3>Starter</h3><p class="muted">Pilot deployments and POCs.</p></div>
+      <div class="panel"><h3>Enterprise</h3><p class="muted">Production, SLA, and custom integrations.</p></div>
+      <div class="panel"><h3>Strategic</h3><p class="muted">White‑label, patent‑aligned licensing.</p></div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div>
+      <strong>Athena RAG</strong><br/>
+      <span class="muted">Private Enterprise AI Platform</span>
+    </div>
+    <div>
+      <p class="muted">Contact</p>
+      <a href="mailto:contact@athenarag.com">contact@athenarag.com</a>
+    </div>
+  </footer>
+</body>
+</html>
